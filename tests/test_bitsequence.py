@@ -1,4 +1,11 @@
-from examples.bitsequence.bitsequence import BitSequence
+import os
+import sys
+
+import pytest
+
+# Add the parent directory to sys.path to ensure relative imports work
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from src.examples.bitsequence.bitsequence import BitSequence
 
 
 class TestBitSequence:

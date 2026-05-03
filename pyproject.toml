@@ -9,3 +9,8 @@ dependencies = [
     "pytest-cov>=7.1.0",
     "ruff>=0.15.12",
 ]
+
+[tool.pytest.ini_options]
+testpaths = ["src/examples"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
